@@ -12,7 +12,7 @@
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">#ID</th>
+            <th scope="col">ID</th>
             <th scope="col">Title</th>
             <th scope="col">Thumbnail</th>
             <th scope="col">Author</th>
@@ -41,7 +41,7 @@
                     <form action="{{route('book.destroy', $book->id)}}" method="post">
                       @csrf
                       @method('DELETE')
-                      <button type="submit" class="btn btn-danger" onclick="confirm('Are you want delete?')">Delete</button>
+                      <button type="submit" class="btn btn-danger" onclick="return confirm('Are you want delete?')">Delete</button>
                     </form>
                 </td>
               </tr>
