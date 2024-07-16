@@ -9,8 +9,8 @@
   <body>
     <h1>Danh sách Book</h1>
     <button class="btn btn-info"><a href="{{route('book.create')}}">Create New</a></button>
-    <table class="table">
-        <thead>
+    <table class="table table-bordered border-primary">
+        <thead class="table-primary">
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Title</th>
@@ -20,7 +20,7 @@
             <th scope="col">Publication</th>
             <th scope="col">Price</th>
             <th scope="col">Quantity</th>
-            <th scope="col">Category Name</th>
+            <th scope="col">Category</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
